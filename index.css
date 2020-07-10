@@ -32,7 +32,7 @@ body {
 
 h1 {
     font-family: "Amatic SC";
-    font-size: 3.8rem;
+    font-size: 4.5rem;
     text-align: center;
     margin: 4% auto;
     letter-spacing: 3px;
@@ -51,14 +51,14 @@ nav a {
     text-decoration: none;
     padding: 10px 10px;
     border: 2px solid black;
-    font-size: 1rem;  
+    font-size: 1.5rem;  
     width: 10%;
 
 }
 
 h2 {
     font-family: "Amatic SC";
-    font-size: 3.8rem;
+    font-size: 4.5rem;
     text-align: center;
     margin: 2% auto;
     letter-spacing: 3px;
@@ -88,11 +88,18 @@ header p {
    
 }
 
-/*#projectsPanel .projectsPanelImg {
-    margin-top: 3%;
-    display: flex;
 
-}*/
+#projectsPanel .projectsImg {
+    opacity: 1;
+    transition: 0.3s;
+
+}
+
+#projectsPanel .projectsImg:hover{
+    opacity: 0.6;
+}
+
+
 
 #projectsPanel {
     display: flex;
@@ -103,6 +110,7 @@ header p {
 
 #projectPanelText p{
     font-size: 1.0rem;
+    line-height: 1.5;
     padding-bottom: 20px;
     
 }
@@ -140,7 +148,7 @@ footer button {
     text-decoration: none;
     padding: 10px 10px;
     border: 2px solid black;
-    font-size: 1rem;  
+    font-size: 1.0rem;  
     width: 10%;
 
 }
@@ -153,6 +161,7 @@ footer #socialMedia{
 footer a{
     text-decoration: none;
     font-size: 3.8rem;
+    color: #FF3F24;
     
 
 
