@@ -210,14 +210,33 @@ footer a {
   color: #ff3f24;
 }
 
+/* necessary adjustments for <1000px */
+
+@media (max-width: 1000px) {
+  #projectsPanel {
+    flex-wrap: wrap;
+  }
+  #projectPanelText {
+    width: 80%;
+  }
+
+  #projectPanelText p {
+    margin-top: 50px;
+  }
+
+  footer button {
+    width: 20%;
+  }
+}
+
 @media (max-width: 800px) {
- h1{
-     font-size: 5.0rem;
- }
- 
- h2{
-     font-size: 3.6rem;
- }
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
   #projectsPanel {
     flex-wrap: wrap;
   }
@@ -227,14 +246,38 @@ footer a {
     margin-top: 28px;
   }
 
-  footer button{
-    width: 40%;
+  footer button {
+    width: 30%;
+  }
 }
+
+@media (max-width: 710px) {
+  #projectsPanel {
+    flex-wrap: wrap;
+    
+  }
+
+  .projectsImg {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+
+  #projectPanelText {
+      width: 80%;
+  }
+
+  footer button {
+    width: 30%;
+  }
+  
 }
 
 /* mobile settings */
 
 @media (max-width: 500px) {
+  p {
+    font-size: 0.75rem;
+  }
   nav,
   a {
     display: flex;
@@ -262,23 +305,22 @@ footer a {
   }
 
   #projectPanelText button {
-      width: 100%;
-      text-decoration: none;
+    width: 100%;
+    text-decoration: none;
   }
 
-  footer button{
-      width: 80%;
+  footer button {
+    width: 30%;
   }
 
-  footer #socialMedia{
-      display: flex;
-      justify-content: center;
+  footer #socialMedia {
+    display: flex;
+    justify-content: center;
   }
 
-  #socialMedia a{
-      margin-left: 5%;
-      margin-right: 5%;
+  #socialMedia a {
+    margin-top: 40px;
+    margin-left: 3%;
+    margin-right: 3%;
   }
-
-
 }
