@@ -1,184 +1,284 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 
-html, body, div, span, applet, object, iframe,  
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
-a, abbr, acronym, address, big, cite, code,  
-del, dfn, em, img, ins, kbd, q, s, samp,  
-small, strike, strong, sub, sup, tt, var,  
-b, u, i, center,  
-dl, dt, dd, ol, ul, li,  
-fieldset, form, label, legend,  
-table, caption, tbody, tfoot, thead, tr, th, td,  
-article, aside, canvas, details, embed,  
-figure, figcaption, footer, header, hgroup,  
-menu, nav, output, ruby, section, summary,  
-time, mark, audio, video {  
-margin: 0;  
-padding: 0;  
-border: 0;  
-font-size: 100%;  
-font: inherit;  
-vertical-align: baseline;  
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 body {
-    font-size: 62.5%;
-    font-family: "Barlow";
-    background-color: #BEF3CD;
-
+  font-size: 62.5%;
+  font-family: "Barlow";
+  background-color: #bef3cd;
 }
 
 h1 {
-    font-family: "Amatic SC";
-    font-size: 4.5rem;
-    text-align: center;
-    margin: 4% auto;
-    letter-spacing: 3px;
+  font-family: "Amatic SC";
+  font-size: 4.5rem;
+  text-align: center;
+  margin: 4% auto;
+  letter-spacing: 3px;
 }
 
 nav {
-    text-align: center;
-    margin-top: 2%;
-    display: flex;
-    justify-content: center;
-
+  text-align: center;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
 }
 
 nav a {
-    background-color: white;
-    text-decoration: none;
-    padding: 10px 10px;
-    border: 2px solid black;
-    font-size: 1.5rem;  
-    width: 10%;
-
+  background-color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  border: 2px solid black;
+  font-size: 1.2rem;
+  width: 10%;
 }
 
 h2 {
-    font-family: "Amatic SC";
-    font-size: 4.5rem;
-    text-align: center;
-    margin: 2% auto;
-    letter-spacing: 3px;
+  font-family: "Amatic SC";
+  font-size: 4.5rem;
+  text-align: center;
+  margin: 2% auto;
+  letter-spacing: 3px;
 }
 
 header p {
-    font-size: 1.0rem;
-    line-height: 1.9;
-    margin: auto 5%;
-    padding: 30px;
-    
+  font-size: 1rem;
+  line-height: 1.9;
+  margin: auto 5%;
+  padding: 30px;
 }
 
 #backgroundCover {
-    background-image: url("project-img/roman-bozhko-PypjzKTUqLo-unsplash.jpg");
-    background-size: cover;
-    height: 60vh;
-    background-position: center;
-    background-attachment: fixed;
-
+  background-image: url("project-img/roman-bozhko-PypjzKTUqLo-unsplash.jpg");
+  background-size: cover;
+  height: 60vh;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-
-#projectsPanel img{
-    height: 50vh;
-    width: auto;
-   
+#projectsPanel img {
+  height: 50vh;
+  width: auto;
 }
-
 
 #projectsPanel .projectsImg {
-    opacity: 1;
-    transition: 0.3s;
-
+  opacity: 1;
+  transition: 0.3s;
 }
 
-#projectsPanel .projectsImg:hover{
-    opacity: 0.6;
+#projectsPanel .projectsImg:hover {
+  opacity: 0.6;
 }
-
-
 
 #projectsPanel {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 2% auto;
-    
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2% auto;
 }
 
-#projectPanelText p{
-    font-size: 1.0rem;
-    line-height: 1.5;
-    padding-bottom: 20px;
-    
+#projectPanelText p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-bottom: 20px;
 }
 
 #projectPanelText {
-    width: 17%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #projectPanelText button {
-    background-color: white;
-    text-decoration: none;
-    padding: 10px 10px;
-    border: 2px solid black;
-    font-size: 1rem;  
-    
-    
-
-
+  background-color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  border: 2px solid black;
+  font-size: 1rem;
 }
 
 footer {
-    margin-top: 2%;
-    margin-bottom: 5%;
-    text-align: center;
-
+  margin-top: 2%;
+  margin-bottom: 5%;
+  text-align: center;
 }
 
 footer button {
-    background-color: white;
-    text-decoration: none;
-    padding: 10px 10px;
-    border: 2px solid black;
-    font-size: 1.0rem;  
-    width: 10%;
-
+  background-color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  border: 2px solid black;
+  font-size: 1rem;
+  width: 10%;
 }
 
-footer #socialMedia{
-    margin-top: 2%;
-   
+footer #socialMedia {
+  margin-top: 2%;
 }
 
-footer a{
-    text-decoration: none;
-    font-size: 3.8rem;
-    color: #FF3F24;
-    
+footer a {
+  text-decoration: none;
+  font-size: 3.8rem;
+  color: #ff3f24;
+}
+
+@media (max-width: 800px) {
+ h1{
+     font-size: 5.0rem;
+ }
+ 
+ h2{
+     font-size: 3.6rem;
+ }
+  #projectsPanel {
+    flex-wrap: wrap;
+  }
+
+  #projectPanelText {
+    width: 80%;
+    margin-top: 28px;
+  }
+
+  footer button{
+    width: 40%;
+}
+}
+
+/* mobile settings */
+
+@media (max-width: 500px) {
+  nav,
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 30%;
+  }
+
+  #projectsPanel {
+    justify-content: space-evenly;
+  }
+
+  .projectsImg {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+
+  #projectPanelText {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #projectPanelText button {
+      width: 100%;
+      text-decoration: none;
+  }
+
+  footer button{
+      width: 80%;
+  }
+
+  footer #socialMedia{
+      display: flex;
+      justify-content: center;
+  }
+
+  #socialMedia a{
+      margin-left: 5%;
+      margin-right: 5%;
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
